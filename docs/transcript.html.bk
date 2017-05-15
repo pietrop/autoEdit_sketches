@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>TBVE</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+$(function () {
+$('[data-toggle="popover"]').popover()
+})
+</script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <style media="screen">
+  .highlighted {
+    background-color: yellow;
+
+  }
+
+  /*.highlighted-used {
+    background-color: #FFFF99;
+
+  }*/
+
+  .highlighted-used {
+    background-color: #FFFF99;
+    /*FFFFCC*/
+  }
+
+  .transcript-individual {
+    height: 80vh;/* TODO: look into more accurate way to do this*/
+    overflow: scroll;
+}
+
+.video{
+  height: 20vh;
+}
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <a class="btn btn-default hidden-print" href="./transcripts.html" role="button">
+      <span class="glyphicon glyphicon-arrow-left"></span>
+    </a><br><br>
+
+    <div class="row ">
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3
+      col-sm-push-9 col-md-push-9 col-lg-push-9">
+      <!--  -->
+      <img class="img-responsive hidden-print video" src="demoVideoPlaceholder.png" >
+
+      <div class="row">
+        <div class="hidden-xs col-sm-8 col-md-8 col-lg-8
+        col-sm-pull-3 col-md-pull-3 col-lg-pull-3">
+        <br>
+        <br>
+
+         <!-- <span class="highlighted">Tag</span> -->
+         <!-- TODO: Use popover https://getbootstrap.com/javascript/#popovers -->
+         <span type="button" data-toggle="popover"title="Tag description here"  data-placement="right"  data-content="any comment on this hilight and the use of this tag in this specific goes here "><span class="label label-warning">Tag example</span></span>
+
+
+      </div>
+    </div>
+
+  </div><!-- end col  -->
+
+  <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8
+  col-sm-pull-3 col-md-pull-3 col-lg-pull-3">
+  <!--  -->
+  <h1>Transcript: <small contenteditable="true">Interview with someone</small></h1>
+ <div class="visible-print-inline">
+   <p><code>fileName.mov</code>
+   <p>Description.Lore ispusm is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown p
+   </p>
+  <hr>
+</div>
+  <!-- search -->
+
+
+
+  <div class="input-group hidden-print">
+    <input type="text" class="form-control" placeholder="Search transcript">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-filter" aria-hidden="true"></span><span class="caret"></span></button>
+    </span>
+  </div><!-- /input-group -->
+<br>
+
+  <!-- end search -->
+  <div class="col-xs-10 col-sm-12 col-md-12 col-lg-12">
+    <div class="transcript-individual">
+
+      <!-- speaker section -->
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <strong>speaker 1</strong>
+          <!-- <code  class="timecode-for-print visible-print-inline"><small>00:00:00:00 - 00:00:00:00</small></code> -->
+
+      </div>
+      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+        <p>Lorem ipsum dolor sit amet, <span class="highlighted" type="button" data-toggle="popover"title="Tag name and Tag description here"  data-placement="right"  data-content="any comment on this hilight and the use of this tag in this specific goes here ">consectetur adipiscing elit, sed do eiusmod tempor incididunt</span> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<p> </p>ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      </div>
+      <!-- speaker section -->
+      <!-- speaker section -->
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <strong>speaker 2</strong>
+      </div>
+      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<p> </p>ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <!-- speaker section -->
+      <!-- speaker section -->
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <strong>speaker 2</strong>
+      </div>
+      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <span class="highlighted-used"  type="button" data-toggle="popover"title="Tag name and Tag description here"  data-placement="bottom"  data-content="any comment on this hilight and the use of this tag in this specific goes here. this one is ligher yellow, to signifies it has been used in the paperedit ">consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></p>
+      </div>
+      <!-- speaker section -->
+      <!-- speaker section -->
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <strong>speaker 2</strong>
+      </div>
+      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<p> </p>ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <!-- speaker section -->
+      <!-- speaker section -->
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <strong>speaker 2</strong>
+      </div>
+      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<p> </p>ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <!-- speaker section -->
+      <!-- speaker section -->
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <strong>speaker 1</strong>
+      </div>
+      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<p> </p>ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <!-- speaker section -->
+      <!-- speaker section -->
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <strong>speaker 2</strong>
+      </div>
+      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<p> </p>ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <!-- speaker section -->
+      <!-- speaker section -->
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <strong>speaker 1</strong>
+      </div>
+      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<p> </p>ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <!-- speaker section -->
+
+    </div> <!-- transcript -->
+
+  </div><!-- end col  -->
+  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+<!--  hidden-sm	hidden-md hidden-lg-->
+    <!-- <span type="button" data-toggle="popover" title="Tag description here"  data-placement="bottom"  data-content="any comment on this hilight and the use of this tag in this specific goes here "><span class="label label-warning">Tag example</span></span> -->
+
+
+  </div><!-- end col  -->
+</div><!-- end col  -->
+</div> <!-- end row -->
+</div>
+
+<!-- Filter can be a modal where you can review and tick speakers and tags
+for the tags that's where you see their description as well.  -->
+
+
+</body>
+</html>
